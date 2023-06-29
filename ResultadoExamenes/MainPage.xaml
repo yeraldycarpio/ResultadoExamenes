@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResultadoExamenes.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="examen.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Resultado Examenes"
+                HorizontalTextAlignment="Center"
+                TextColor="Coral"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="40"
+                HorizontalOptions="Center" />
+
+            <Entry Placeholder="Ingrese su nota" x:Name="notaA"  FontAttributes="Italic"/>
+            <Entry Placeholder="Ingrese su nota" x:Name="notaB"  FontAttributes="Italic" />
+            <Entry Placeholder="Ingrese su nota" x:Name="notaC"  FontAttributes="Italic"/>
+            <Entry Placeholder="Ingrese su nota" x:Name="notaD"  FontAttributes="Italic" />
+            <Entry Placeholder="Ingrese su nota" x:Name="notaE"  FontAttributes="Italic" />
+            <Entry Placeholder="Nota final" x:Name="notaFinal"  FontAttributes="Italic" />
+            <Button Text="Evaluar" x:Name="Resultado"  Clicked="Resultado_Clicked"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
